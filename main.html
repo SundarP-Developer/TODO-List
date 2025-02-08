@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="QN.css">
+</head>
+<body>
+    
+    <div class="navbar">
+        <div class="enter">
+            <a href="" target="_blank"><h2>sign up</h2></a>
+            <a href="login.html" target="_blank" id="login"><h2>log in</h2></a>
+        </div>
+    <!-- heading --> 
+        <h1>QuickNotes</h1> 
+    </div>
+
+    <div id="container">
+        <div class="items">
+            <h2>An example Event</h2>
+            <h5>Birthday Event</h5>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio illum vel sed perspiciatis vitae provident dolorum molestiae cumque fugit quaerat maxime, magni, nihil, quis officiis rem cupiditate nam tempore optio.</p>
+            <button onclick="del(event)">Delete</button>
+            <button onclick="edit(this)" id="edit">Edit</button>
+        </div>
+    </div>
+
+    <div id="overlay"></div>
+
+    <div id="popup">
+        <h2>Add Quick Notes</h2>
+        <form>
+        <input type="text" id="title" placeholder="Heading" ><br>
+        <input type="text" id="author" placeholder="Events"><br>
+        <textarea name="" id="description" placeholder="Details" ></textarea>
+        <button id="add">Add</button>
+        <button id="cancel">Cancel</button>
+        </form>
+    </div>
+
+    <button id="plusbtn" >+</button>
+
+    <script src="QN.js"></script>
+</body>
+</html>
